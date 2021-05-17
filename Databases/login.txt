@@ -1,0 +1,21 @@
+"Bar":
+ {
+"title1": "FurnitureXD",
+"title2":"Home",
+"title3":"Bedroom",
+"title4":"Dining",
+"title5":"living",
+"title6":"Aboutus",
+"title7":"Contactus"
+"image1":"
+"image2":"
+ },
+{
+"loginhead":"LOGIN",
+"signinfo":"sign in to your account",
+"username":"Username",
+"password":"Password",
+ "loginbutton":"Login",
+"forgotpass":"I forgot my password.Click here to reset",
+Registerbutton":"Register New Account"
+}

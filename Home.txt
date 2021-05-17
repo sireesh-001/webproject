@@ -24,7 +24,6 @@
               door leads to my bedroom because if the way it looks.",
 "Bedroomimage":
 },
-
 "aboutus":
 {
     "aboutushead":"About Us",
@@ -35,27 +34,29 @@
 }
 }
 "TEAM":[
-{
+{   
+    "abhinavimage":
     "name":"ABHINAV STEPHEN",
     "University":"BML MUNJAL UNIVERSITY",
     "YEAR":"Engineering 2nd year",
     "mailid":"abhinavstephan@gmail.com"
 },
-{
+{   
+    "sireeshimage":
     "name":"SIREESH REDDY",
     "University":"BML MUNJAL UNIVERSITY",
     "YEAR":"Engineering 2nd year",
     "mailid":"sireeshr001@gmail.com"
 },
 {
+    "Pranavimage":
     "name":"PRANAV STEYN",
     "University":"BML MUNJAL UNIVERSITY",
     "YEAR":"Engineering 2nd year",
     "mailid":"steynpranav.7@gmail.com"
-},
+}
 ]
 "Contactushead":"ContactUs",
-"contactusinfo":"support.furniturexd@gmail.com
-
-                 Address:Flat no:144,Road no 7,Jubilee Hills,Hyderabad"
+"contactusinfo":"support.furniturexd@gmail.com Address:Flat no:144,Road no 7,Jubilee Hills,Hyderabad"
  
+}
