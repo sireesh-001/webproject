@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bedroom</title>
+    <link rel="stylesheet" type="text/css" href="swag2.css">
+    <script src="Full.js"></script>
+</head>
+<body>
+<div class="i1">
+    <div class="bar">
+        <img src="img0.png" class="p0">
+        <p class="p3">FurnitureXD</p>
+        <a href="index.html#home"><p class="p4">Home</p></a>
+        <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
+        <a href="index.html#dining"><p class="p6">Dining</p></a>
+        <a href="index.html#living"><p class="p7">Living</p></a>
+        <a href="index.html#about"><p class="p8">About</p></a>
+        <a href="index.html#contact"><p class="p9">Contact</p></a>
+        <a href="login.html" ><button class="p00">Login/Register</button></a>
+    </div>
+    <img class="img1" src="img_8.png" id="img1">
+    <video class="video"id="30" controls autoplay muted>
+        <source src="video_bed.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <p class="p10">FRIHETEN SOFA BED</p>
+    <p class="p11">Price :  ₹ 33,990.00<br></p>
+    <p class="p14">M.R.P.:	₹ 39,990.00<br></p>
+    <p class="p15">   You Save:	₹ 6000.00 (54%)<br>
+        Inclusive of all taxes</p>
+    <a href="#"><p class="p20">Add to Cart </p></a>
+    <a href="checkout.html"><p class="p21">Check out </p></a>
+    <p class="p12">Corner sofa-bed with storage, Skiftebo dark grey
+        After a good night’s sleep, you can effortlessly convert your bedroom or guest room into a living room again. The built-in storage is easy to access and spacious enough to stow bedding, books and PJs.</p>
+    <img id ="next_din"class="img2" src="img_36.jpeg">
+    <p id ="next_din1"class="p13">PAX Wardrobe</p>
+    <img id ="next_din2"class="img12" src="img_10.png">
+    <p id ="next_din3" class="p23">MALM BED FRAME <br></p>
+</div>
+</body>
+<script >
+    let img=document.getElementById("img1");
+let video=document.getElementById('30');
+img.addEventListener("mouseenter",show)
+video.addEventListener("mouseleave",leave)
+function leave(){
+    img.style.display="inline";
+    video.style.display="none";
+}
+function show(){
+    img.style.display="none";
+    video.style.display="inline";
+}
+        let image2=document.getElementById('next_din')
+        let text1=document.getElementById('next_din1')
+        let image3=document.getElementById('next_din2')
+        let text2=document.getElementById('next_din3')
+        image2.addEventListener('mouseenter',change2)
+        image2.addEventListener('mouseleave',change3)
+        function change2(){
+        image2.src='img_37.jpeg';}
+        function change3(){
+        image2.src='img_36.jpeg';}
+        image3.addEventListener('mouseenter',change4)
+        image3.addEventListener('mouseleave',change5)
+        function change4(){
+        image3.src='img_42.jpeg';}
+        function change5(){
+        image3.src='img_10.png';}
+
+</script>
+</html>

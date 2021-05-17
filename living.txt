@@ -1,0 +1,31 @@
+"living":
+{
+"Bar":
+ {
+"title1": "FurnitureXD",
+"title2":"Home",
+"title3":"Bedroom",
+"title4":"Dining",
+"title5":"living",
+"title6":"Aboutus",
+"title7":"Contactus"
+ },
+{
+"Product1_image1":""
+"Product1_image2":""    
+"product1_name":"GRONLID Corner Sofa"
+"MRP":" ₹ 2,00,000.00"
+"price":" ₹ 1,33,000.00"
+"You Save":" ₹ 67000.00 (54%)"
+"incl":" Inclusive of all taxes"
+"product_description":"Corner sofa, 5-seat, with chaise longue/Kimstad dark brown. Snuggle up, feel warmly embraced and enjoy cosy nights and lazy days. This sofa is extra deep, has soft and moveable back cushions, and comes in various sizes and shapes – everything for your comfort."
+},
+{
+"Product2_image":""  
+"product2_name":"SODERHAMN MODULAR SOFA"
+},
+{
+"Product3_image1":"" 
+"product3_name":"LENDA Tie-back Curtains"
+}
+}

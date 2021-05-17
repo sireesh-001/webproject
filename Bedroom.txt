@@ -1,0 +1,31 @@
+"Bedroom":
+{
+"Bar":
+ {
+"title1": "FurnitureXD",
+"title2":"Home",
+"title3":"Bedroom",
+"title4":"Dining",
+"title5":"living",
+"title6":"Aboutus",
+"title7":"Contactus"
+ },
+{
+"Product1_image1":""
+"Product1_video":""    
+"product1_name":"FRIHETEN SOFA BED"
+"MRP":" ₹ 39,000.00"
+"price":" ₹ 33,000.00"
+"You Save":" ₹ 6000.00 (14%)"
+"incl":" Inclusive of all taxes"
+"prodct_description":"Corner sofa-bed with storage, Skiftebo dark grey After a good night’s sleep, you can effortlessly convert your bedroom or guest room into a living room again. The built-in storage is easy to access and spacious enough to stow bedding, books and PJs."
+},
+{
+"Product2_image":""  
+"product2_name":"PAX Wardrobe"
+},
+{
+"Product3_image1":"" 
+"product3_name":"MALM BED FRAME"
+}
+}

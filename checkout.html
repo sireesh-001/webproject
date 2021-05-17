@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkout</title>
+    <link href="checkout.css" rel="stylesheet">
+</head>
+<body>
+<div class="bar">
+    <img src="img0.png" class="p0">
+    <p class="p3">FurnitureXD</p>
+    <a href="index.html#home"><p class="p4">Home</p></a>
+    <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
+    <a href="index.html#dining"> <p class="p6">Dining</p></a>
+    <a href="index.html#living"> <p class="p7">Living</p></a>
+    <a href="index.html#about"> <p class="p8">About</p></a>
+    <a href="index.html#contact"><p class="p9">Contact</p></a>
+    <a href="login.html"><button class="p10">Login/Register</button></a>
+</div>
+<div class="div1">
+    <img class="img2" src="img_13.jpeg">
+    <p class ="p1">Oribi Upholstered Dining Bench</p>
+    <p class ="p2">Rs:22999.00</p>
+    <img class="img1" src="img_6.jpeg">
+    <div class="div2">
+        <div class="div3"><svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" fill-rule="evenodd"><path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939"/><path d="M90.854 42.9l14.322-13.065-6.784-13.516z" fill="#ed752e"/><path d="M22.41 16.47l-6.03 21.475 21.407.15 5.88-21.625h5.427l-7.05 25.14c-.27.96-1.298 1.74-2.295 1.74H12.31c-1.664 0-2.65-1.3-2.2-2.9l6.724-23.98zm66.182-.15h5.427l-7.538 27.03h-5.58zM49.698 27.582l27.136-.15 1.81-5.707H51.054l1.658-5.256 29.4-.27c1.83-.017 2.92 1.4 2.438 3.167L81.78 29.49c-.483 1.766-2.36 3.197-4.19 3.197H53.316L50.454 43.8h-5.28z" fill="#747474"/></svg></div>
+        <div class="div4">
+            <p class="dip1"></p>
+            <p class="dip2">Or pay with card</p>
+            <p class="dip3"></p>
+        </div>
+        <div class="div5">
+            <p class="dip4">Email</p>
+            <input class="int1">
+        </div>
+        <div class="div6">
+            <p class="int2">Add  Your Card</p>
+            <input class="int3" placeholder="1234 1234 1234 1234">
+            <img class="img4" alt="Credit Card Logos" title="Credit Card Logos" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_23.gif" width="300" height="50" border="0" />
+            <input class="int4" placeholder="MM / YY">
+            <input class="int5" placeholder="CVV">
+        </div>
+        <p class="p11">Name on the card</p>
+        <input class="dip5">
+    </div>
+    <div class="div7">
+        <p class="p12">Country or region</p>
+        <form action="/action_page.php">
+            <select id="select"class="count" name="country" id="count">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            <input class="int6" type="text" placeholder="ZIP">
+            <input id="submit" class="submit" type="submit" value="">
+            <p class="p13">Pay  22999.00</p>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    let h=document.getElementById('submit');
+h.addEventListener('click',upload)
+    function upload(){
+    let option= document.getElementById('select').value;
+    }
+</script>
+</html>

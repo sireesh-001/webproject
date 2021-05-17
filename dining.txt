@@ -1,0 +1,35 @@
+"Dining":
+"Bar":
+ {
+"title1": "FurnitureXD",
+"title2":"Home",
+"title3":"Bedroom",
+"title4":"Dining",
+"title5":"living",
+"title6":"Aboutus",
+"title7":"Contactus"
+ },
+{
+"Product1_image1":""
+"Product1_image2":""    
+"product1_name":"Oribi Upholstered Dining Bench"
+"MRP":" ₹ 49000.00"
+"price":" ₹ 22000.00"
+"You Save":" ₹ 17000.00 (54%)"
+"incl":" Inclusive of all taxes"
+"product_description":"A super-sleek combo ideal for a small kitchen design, the Jakob dining set will comfortably seat a party of four. A toughened glass top should prevent sneaky scratches, while each chair is comfortably cushioned and upholstered in a practical grey fabric."
+},
+{
+"Product2_image":""  
+"product2_name":"Taarkashi Dining Bench"
+"MRP":" ₹ 1,59,000.00"
+"price":" ₹ 99,000.00"
+"You Save":" ₹ 60,000.00 (35%)"
+"incl":" Inclusive of all taxes"
+"product_description":""
+},
+{
+"Product3_image1":""
+"Product3_image2":""   
+"product3_name":"Morbylaga Dining Bench"
+}

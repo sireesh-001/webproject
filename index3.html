@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Living</title>
+    <link rel="stylesheet" type="text/css" href="swag3.css">
+    <script src="Full.js"></script>
+</head>
+<body>
+<div class="i1">
+    <div class="bar">
+        <img src="img0.png" class="p0">
+        <p class="p3">FurnitureXD</p>
+        <a href="index.html#home"><p class="p4">Home</p></a>
+        <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
+        <a href="index.html#dining"><p class="p6">Dining</p></a>
+        <a href="index.html#living"><p class="p7">Living</p></a>
+        <a href="index.html#about"><p class="p8">About</p></a>
+        <a href="index.html#contact"><p class="p9">Contact</p></a>
+        <a href="login.html" ><button class="p00">Login/Register</button></a>
+    </div>
+    <img id="image" class="img1" src="img_40.png">
+    <p class="p10">GRONLID Corner Sofa</p>
+    <p class="p11">Price :  ₹ 2,00,000.00<br></p>
+    <p class="p14">M.R.P.:	₹ 1,33,000.00<br></p>
+    <p class="p15">   You Save:	₹ 67000.00 (54%)<br>
+        Inclusive of all taxes</p>
+    <a href="#"><p class="p20">Add to Cart </p></a>
+    <a href="checkout.html"><p class="p21">Check out </p></a>
+    <p class="p12">Corner sofa, 5-seat, with chaise longue/Kimstad dark brown.
+        Snuggle up, feel warmly embraced and enjoy cosy nights and lazy days. This sofa is extra deep, has soft and moveable back cushions, and comes in various sizes and shapes – everything for your comfort.</p>
+    <img id ="next_din"class="img2" src="img_41.jpeg">
+    <p id ="next_din1" class="p13">SODERHAMN
+        MODULAR SOFA</p>
+    <img id ="next_din2"class="img12" src="img_38.jpeg">
+    <p id ="next_din3" class="p23">LENDA Tie-back Curtains</p>
+</div>
+</body>
+<script>
+
+    let image1=document.getElementById('image')
+    let image2=document.getElementById('next_din')
+    let text1=document.getElementById('next_din1')
+    let image3=document.getElementById('next_din2')
+    let text2=document.getElementById('next_din3')
+    image1.addEventListener('mouseenter',change)
+    image1.addEventListener('mouseleave',change1)
+    function change(){
+        image1.src='img_11.png';}
+    function change1(){
+        image1.src='img_40.jpeg';}
+    image2.addEventListener('mouseenter',change2)
+    image2.addEventListener('mouseleave',change3)
+    function change2(){
+        image2.src='img_12.png';}
+    function change3(){
+        image2.src='img_41.jpeg';}
+    image3.addEventListener('mouseenter',change4)
+    image3.addEventListener('mouseleave',change5)
+    function change4(){
+        image3.src='img_39.jpeg';}
+    function change5(){
+        image3.src='img_38.jpeg';}
+</script>
+</html>
