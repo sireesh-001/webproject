@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurnitureXD</title>
-    <link rel="stylesheet" type="text/css" href="swag.css">
-    <script src="Full.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/swag.css">
+    <style>
+.p10{
+display:{{post.but1}};
+}
+.user{
+display :{{post.but2}};
+}
+.name{
+display: {{post.but3}};
+}
+    </style>
 </head>
 <body>
 <div>
@@ -23,7 +33,7 @@
         <a href="#contact"><p class="p9">Contact</p></a>
         <a href="login.html" ><button id="login_button" class="p10">Login/Register</button></a>
         <img id="user_image"class="user" src="img_20.jpeg">
-        <p id="name_login" class="name">Abhinav</p>
+        <p id="name_login" class="name" >{{post.but4}}</p>
     </div>
     <p class ="p1">Furniture For All Your Needs</p>
     <p class="p2">Get creative and experiment with home furniture designs that have been uniquely crafted for different areas of the home.</p>
@@ -133,18 +143,4 @@
     </div>
 </div>
 </body>
-<script>
-    document.getElementById('home_id').addEventListener('mouseenter',check)
-    function check(){
-        if(done>0){
-            document.getElementById('login_button').style.display="none";
-            document.getElementById('user_image').style.display="inline";
-            document.getElementById('name_login').style.display="inline";
-        }
-        else if (done==0){
-            document.getElementById('login_button').style.display="none";
-            document.getElementById('user_image').style.display="inline";
-            document.getElementById('name_login').style.display="inline";
-        }}
-</script>
 </html>

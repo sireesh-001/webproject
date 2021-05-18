@@ -9,34 +9,76 @@
 <body>
 <div class="i1">
     <div class="bar">
-        <img src="img0.png" class="p0">
-        <p class="p3">FurnitureXD</p>
-        <a href="index.html#home"><p class="p4">Home</p></a>
-        <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
-        <a href="index.html#dining"><p class="p6">Dining</p></a>
-        <a href="index.html#living"><p class="p7">Living</p></a>
-        <a href="index.html#about"><p class="p8">About</p></a>
-        <a href="index.html#contact"><p class="p9">Contact</p></a>
+        <img id="i0" class="p0">
+        <p class="p3"id="j5"></p>
+        <a href="index.html#home"><p class="p4"id="j6"></p></a>
+        <a href="index.html#bedroom"><p class="p5"id="j7"></p></a>
+        <a href="index.html#dining"><p class="p6"id="j8"></p></a>
+        <a href="index.html#living"><p class="p7"id="j9"></p></a>
+        <a href="index.html#about"><p class="p8"id="j10"></p></a>
+        <a href="index.html#contact"><p class="p9"id="j11"></p></a>
         <a href="login.html" ><button class="p00">Login/Register</button></a>
     </div>
-    <img id="image" class="img1" src="img_40.png">
-    <p class="p10">GRONLID Corner Sofa</p>
-    <p class="p11">Price :  ₹ 2,00,000.00<br></p>
-    <p class="p14">M.R.P.:	₹ 1,33,000.00<br></p>
-    <p class="p15">   You Save:	₹ 67000.00 (54%)<br>
-        Inclusive of all taxes</p>
+    <img id="i1" class="img1" >
+    <p class="p10"id="A"></p>
+    <p class="p11"id="B"></p>
+    <p class="p14"id="C"></p>
+    <p class="p15"id="D"></p>
     <a href="#"><p class="p20">Add to Cart </p></a>
     <a href="checkout.html"><p class="p21">Check out </p></a>
-    <p class="p12">Corner sofa, 5-seat, with chaise longue/Kimstad dark brown.
-        Snuggle up, feel warmly embraced and enjoy cosy nights and lazy days. This sofa is extra deep, has soft and moveable back cushions, and comes in various sizes and shapes – everything for your comfort.</p>
-    <img id ="next_din"class="img2" src="img_41.jpeg">
-    <p id ="next_din1" class="p13">SODERHAMN
-        MODULAR SOFA</p>
-    <img id ="next_din2"class="img12" src="img_38.jpeg">
-    <p id ="next_din3" class="p23">LENDA Tie-back Curtains</p>
+    <p class="p12"id="E"></p>
+    <img id ="i3"class="img2" >
+    <p id ="F" class="p13"></p>
+    <img id ="i4"class="img12" >
+    <p id ="G" class="p23"></p>
 </div>
 </body>
 <script>
+let json="living.json";
+    let httprequest = new XMLHttpRequest();
+    httprequest.open('GET',json);
+    httprequest.responseType='json';
+    httprequest.send();
+    httprequest.onload=function(){
+        const jdata=httprequest.response;
+        gettext(jdata);}
+    function gettext(obj){
+        document.getElementById('i0').src=obj['image0'];
+    document.getElementById('j5').innerHTML=obj['title1'];
+    document.getElementById('j6').innerHTML=obj['title2'];
+    document.getElementById('j7').innerHTML=obj['title3'];
+    document.getElementById('j8').innerHTML=obj['title4'];
+    document.getElementById('j9').innerHTML=obj['title5'];
+    document.getElementById('j10').innerHTML=obj['title6'];
+    document.getElementById('j11').innerHTML=obj['title7'];
+    document.getElementById('A').innerHTML=obj['product1_name'];
+    document.getElementById('B').innerHTML=obj['price1'];
+    document.getElementById('C').innerHTML=obj['MRP1'];
+    document.getElementById('D').innerHTML=obj['You Save1'];
+    document.getElementById('E').innerHTML=obj['product_description1'];
+    document.getElementById('F').innerHTML=obj['product2_name'];
+    document.getElementById('G').innerHTML=obj['product3_name'];
+
+
+    document.getElementById('i1').src=obj['Product1_image1'];
+    document.getElementById('i3').src=obj['Product2_image'];
+   
+    document.getElementById('i4').src=obj['Product3_image1'];
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     let image1=document.getElementById('image')
     let image2=document.getElementById('next_din')

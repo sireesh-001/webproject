@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurnitureXD</title>
     <link rel="stylesheet" type="text/css" href="swag.css">
-    <script src="Full.js"></script>
+
 </head>
 <body>
 <div>
@@ -75,10 +75,10 @@
             <div class="card">
                 <img id="im6" alt="abhinav" style="width:60%" height="300px">
                 <div class="container">
-                    <h2>Abhinav Stephen</h2>
-                    <p class="title">BML MUNJAL UNIVERSITY</p>
-                    <p>Engineering 2nd  Year</p>
-                    <p>abhinavstephan@gmail.com</p>
+                    <h2 id="j23"></h2>
+                    <p class="title" id="j24"></p>
+                    <p id="j25"></p>
+                    <p id="j26"></p>
                 </div>
             </div>
         </div>
@@ -87,10 +87,10 @@
             <div class="card">
                 <img  id="im7"alt="Sireesh" style="width:60%" height="300px">
                 <div class="container">
-                    <h2>Sireesh Reddy</h2>
-                    <p class="title">BML MUNJAL UNIVERSITY</p>
-                    <p>Engineering 2nd  Year</p>
-                    <p>sireeshr001@gmail.com</p>
+                    <h2 id="j27"></h2>
+                    <p class="title" id="j28"></p>
+                    <p id="j29"></p>
+                    <p id="j30"></p>
                 </div>
             </div>
         </div>
@@ -99,10 +99,10 @@
             <div class="card" >
                 <img id="im8" alt="Pranav" style="width:60%" height="300px">
                 <div class="container">
-                    <h2>Pranav Steyn</h2>
-                    <p class="title">BML MUNJAL UNIVERSITY</p>
-                    <p>Engineering 2nd  Year</p>
-                    <p>steynpranav.7@gmail.com</p>
+                    <h2 id="j31"></h2>
+                    <p class="title" id="j32"></p>
+                    <p id="j33"></p>
+                    <p id="j34"></p>
                 </div>
             </div>
         </div>
@@ -111,13 +111,8 @@
 <div class="i7">
     <a name="contact"></a>
     <img class="l6" src="img_5.png">
-    <p class="g3">Contact Us</p>
-    <p class="g4">support.furniturexd@gmail.com
-        <br><br>
-    Address:Flat no:144,Road no 7,Jubilee Hills,Hyderabad
-        <br><br>
-
-    Follow Us On</p>
+    <p class="g3"id="j35"></p>
+    <p class="g4"id="j36"></p>
 </div>
 <div class="i8">
     <p class="g5">FurnitureXD</p>
@@ -129,7 +124,7 @@
 </div>
 </body>
 <script>
-    let json="Home.txt";
+    let json="Home.json";
     let httprequest = new XMLHttpRequest();
     httprequest.open('GET',json);
     httprequest.responseType='json';
@@ -152,11 +147,25 @@
         document.getElementById('j15').innerHTML=obj['Dininginfo'];
         document.getElementById('j16').innerHTML=obj['Livinghead'];
         document.getElementById('j17').innerHTML=obj['Livinginfo'];
-        document.getElementById('j18').innerHTML=obj['BedroomHead'];
+        document.getElementById('j18').innerHTML=obj['Bedroomhead'];
         document.getElementById('j19').innerHTML=obj['Bedroominfo'];
         document.getElementById('j20').innerHTML=obj['aboutushead'];
         document.getElementById('j21').innerHTML=obj['aboutusinfo'];
         document.getElementById('j22').innerHTML=obj['teamhead'];
+        document.getElementById('j35').innerHTML=obj['contacthead'];
+        document.getElementById('j36').innerHTML=obj['contactmail'];
+        document.getElementById('j23').innerHTML=obj['name1'];
+        document.getElementById('j24').innerHTML=obj['university1'];
+        document.getElementById('j25').innerHTML=obj['year1'];
+        document.getElementById('j26').innerHTML=obj['mail1'];
+        document.getElementById('j27').innerHTML=obj['name2'];
+        document.getElementById('j28').innerHTML=obj['university2'];
+        document.getElementById('j29').innerHTML=obj['year2'];
+        document.getElementById('j30').innerHTML=obj['mail2'];
+        document.getElementById('j31').innerHTML=obj['name3'];
+        document.getElementById('j32').innerHTML=obj['university3'];
+        document.getElementById('j33').innerHTML=obj['year3'];
+        document.getElementById('j34').innerHTML=obj['mail3'];
         document.getElementById('im0').src=obj['image0'];
         document.getElementById('im1').src=obj['image1'];
         document.getElementById('im2').src=obj['image2'];
@@ -167,6 +176,9 @@
         document.getElementById('im7').src=obj['image7'];
         document.getElementById('im8').src=obj['image8'];
         document.getElementById('im9').src=obj['image9'];
+        
+
+
     }
     document.getElementById('home_id').addEventListener('mouseenter',check)
     function check(){

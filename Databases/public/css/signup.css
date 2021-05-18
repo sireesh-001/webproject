@@ -737,6 +737,7 @@ margin: 0px 0px;
 }
 .int5{
     /* Auto Layout */
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;

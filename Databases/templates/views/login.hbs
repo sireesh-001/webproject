@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div>
+    <a name="home"></a>
+    <div class="bar">
+        <img src="img0.png" class="p0">
+        <p class="p3">FurnitureXD</p>
+        <a href="index.html#home"><p class="p4">Home</p></a>
+        <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
+        <a href="index.html#dining"> <p class="p6">Dining</p></a>
+        <a href="index.html#living"> <p class="p7">Living</p></a>
+        <a href="index.html#about"> <p class="p8">About</p></a>
+        <a href="index.html#contact"><p class="p9">Contact</p></a>
+    </div>
+    <img src="img_9.png" class="i1">
+    <div class="v39">
+        <div class="v40"></div>
+        <div class="v41"></div>
+        <div class="v42"></div>
+        <img src="img0.png" class="img">
+        <span class="v44">Login</span>
+        <span class="v45">Sign in to your account</span>
+        <div class="v46">
+            <img src="img_14.png" class="img1">
+        </div>
+        <div class="v47">
+            <img src="img_15.png" class="img2">
+        </div>
+        <div class="v48"></div>
+        <div class="v49"></div>
+        <div class="v50"></div>
+        <div class="v51"></div>
+        <form method="POST" >
+        <input id="username"class="v52" placeholder="Username" name="username">
+        <input class="v53" placeholder="Password" name="password">
+        <input type="submit" id="login"class="v54">Login</input>
+        </form>
+        <a href="signup.html"><span class="v59">Register New Account</span></a>
+        <a href="#"><span class="v60">I forgot my password. Click here to reset</span></a>
+
+</div>
+</div>
+</body>
+<script>
+    let login=document.getElementById('login');
+    let text1=document.getElementById('username');
+    login.addEventListener("click",get_name)
+    function get_name(){
+        username=text1.value;
+        done=done+1;
+    }
+</script>
+</html>

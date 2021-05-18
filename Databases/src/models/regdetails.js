@@ -8,10 +8,11 @@ state:{type:String,required:true},
 zip:{type:String,required:true},
 username:{type:String,required:true},
 password:{type:String,required:true},
+login:{type:Number},
+cart:{type:[Number]},
+order:{type:[Number]},
     }
 )
-
-
 
 const register=new mongoose.model('userdata',usersschema);
 module.exports =register;

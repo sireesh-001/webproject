@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    <script src="Full.js"></script>
 </head>
 <body>
 <div>
     <a name="home"></a>
     <div class="bar">
-        <img src="img0.png" class="p0">
-        <p class="p3">FurnitureXD</p>
-        <a href="index.html#home"><p class="p4">Home</p></a>
-        <a href="index.html#bedroom"><p class="p5">Bedroom</p></a>
-        <a href="index.html#dining"> <p class="p6">Dining</p></a>
-        <a href="index.html#living"> <p class="p7">Living</p></a>
-        <a href="index.html#about"> <p class="p8">About</p></a>
-        <a href="index.html#contact"><p class="p9">Contact</p></a>
+        <img id="im1" class="p0">
+        <p class="p3"id="l1"></p>
+        <a href="index.html#home"><p class="p4"id="l2"></p></a>
+        <a href="index.html#bedroom"><p class="p5"id="l3"></p></a>
+        <a href="index.html#dining"> <p class="p6"id="l4"></p></a>
+        <a href="index.html#living"> <p class="p7"id="l5"></p></a>
+        <a href="index.html#about"> <p class="p8"id="l6"></p></a>
+        <a href="index.html#contact"><p class="p9"id="l7"></p></a>
     </div>
-    <img src="img_9.png" class="i1">
+    <img id="im2" class="i1">
     <div class="v39">
         <div class="v40"></div>
         <div class="v41"></div>
         <div class="v42"></div>
-        <img src="img0.png" class="img">
-        <span class="v44">Login</span>
-        <span class="v45">Sign in to your account</span>
+        <img id="im3" class="img">
+        <span class="v44"id="l8"></span>
+        <span class="v45"id="l9"></span>
         <div class="v46">
-            <img src="img_14.png" class="img1">
+            <img id="im4"class="img1">
         </div>
         <div class="v47">
-            <img src="img_15.png" class="img2">
+            <img id="im5"class="img2">
         </div>
         <div class="v48"></div>
         <div class="v49"></div>
@@ -47,6 +46,32 @@
 </div>
 </body>
 <script>
+       let json="login.json";
+    let httprequest = new XMLHttpRequest();
+    httprequest.open('GET',json);
+    httprequest.responseType='json';
+    httprequest.send();
+    httprequest.onload=function(){
+        const jdata=httprequest.response;
+        gettext(jdata);
+
+    }
+    function gettext(obj){
+        document.getElementById('l1').innerHTML=obj['title1'];
+        document.getElementById('l2').innerHTML=obj['title2'];
+        document.getElementById('l3').innerHTML=obj['title3'];
+        document.getElementById('l4').innerHTML=obj['title4'];
+        document.getElementById('l5').innerHTML=obj['title5'];
+        document.getElementById('l6').innerHTML=obj['title6'];
+        document.getElementById('l7').innerHTML=obj['title7'];
+        document.getElementById('l8').innerHTML=obj['title7'];
+        document.getElementById('l9').innerHTML=obj['title7'];
+        document.getElementById('im1').src=obj['image1'];
+        document.getElementById('im2').src=obj['image2'];
+        document.getElementById('im3').src=obj['image1'];
+        document.getElementById('im4').src=obj['image3'];
+        document.getElementById('im5').src=obj['image4'];
+    }
     let login=document.getElementById('login');
     let text1=document.getElementById('username');
     login.addEventListener("click",get_name)
