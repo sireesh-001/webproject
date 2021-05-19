@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,6 +64,114 @@
 </form>
 </body>
 <script>
+    let h=document.getElementById('submit');
+    h.addEventListener('click',upload)
+    function upload(){
+        let option= document.getElementById('select').value;
+    }
+</script>
+</html> --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-Up</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <div class="bar">
+        <img id="im1" class="p01">
+        <p class="p31"id="s1"></p>
+        <a href="/"><p class="p41"id="s2"></p></a>
+        <a href="/#bedroom"><p class="p51"id="s3"></p></a>
+        <a href="/#dining"><p class="p61"id="s4"></p></a>
+        <a href="/#living"><p class="p71"id="s5"></p></a>
+        <a href="/#about"><p class="p81"id="s6"></p></a>
+        <a href="/#contact"><p class="p91"id="s7"></p></a>
+        <a href="/login" ><button class="p00">Login</button></a>
+    </div>
+<div class="div1">
+
+    <p class="p10" id="s8"></p>
+
+    <img class="img1" id="im2">
+    <p class="p11"id="s9"></p>
+   <p class="p13"id="s10"></p>
+</div>
+
+<form name="form" method="post" action="">
+<div class="div2">
+    <div class="div3">
+        <div class="div4">
+            <p class="p0"id="s11"></p>
+            <input class="int1" name="name" type="text">
+        </div>
+        <div class="div5">
+            <p class="p1"id="s12"></p>
+<select id="select" class="int2" name="country">
+    <option>hi</option>
+    <option></option>
+    <option></option>
+    <option></option>
+</select>
+        </div>
+        <div class="div6">
+            <p class="p4"id="s13"></p>
+            <input class="int9" name="city">
+            <p class="p5"id="s14"></p>
+            <input class="int10"name="state">
+            <p class="p6"id="s15"></p>
+            <input class="int11" name="zip">
+        </div>
+    </div>
+<div class="div7">
+    <p class="p14" id="s16"></p>
+    <input class="int5" placeholder="Create a username" name="username">
+</div>
+    <div class="div8">
+    <p class="p15" id="s17"></p>
+    <input class="int6" type="password" placeholder="Enter your password" name="password">
+    <p class="p16"id="s18"></p>
+    </div>
+    <input type="submit" id="submit" class="butt1"><p class="p45">SIGNUP</p></submit>
+</div>
+</form>
+</body>
+<script>
+      let json="/css/signup.json";
+    let httprequest = new XMLHttpRequest();
+    httprequest.open('GET',json);
+    httprequest.responseType='json';
+    httprequest.send();
+    httprequest.onload=function(){
+        const jdata=httprequest.response;
+        gettext(jdata);
+
+    }
+    function gettext(obj){
+        document.getElementById('im1').src=obj['image1'];
+        document.getElementById('im2').src=obj['image1'];
+        document.getElementById('s1').innerHTML=obj['title1'];
+        document.getElementById('s2').innerHTML=obj['title2'];
+        document.getElementById('s3').innerHTML=obj['title3'];
+        document.getElementById('s4').innerHTML=obj['title4'];
+        document.getElementById('s5').innerHTML=obj['title5'];
+        document.getElementById('s6').innerHTML=obj['title6'];
+        document.getElementById('s7').innerHTML=obj['title7'];
+        document.getElementById('s8').innerHTML=obj['craftedhead'];
+        document.getElementById('s9').innerHTML=obj['quote'];
+        document.getElementById('s10').innerHTML=obj['weprovide'];
+        document.getElementById('s11').innerHTML=obj['name'];
+        document.getElementById('s12').innerHTML=obj['country'];
+        document.getElementById('s13').innerHTML=obj['city'];
+        document.getElementById('s14').innerHTML=obj['state'];
+        document.getElementById('s15').innerHTML=obj['zipcode'];
+        document.getElementById('s16').innerHTML=obj['username'];
+        document.getElementById('s17').innerHTML=obj['password'];
+        document.getElementById('s18').innerHTML=obj['passwordinfo'];
+    }
     let h=document.getElementById('submit');
     h.addEventListener('click',upload)
     function upload(){

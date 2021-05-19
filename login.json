@@ -6,15 +6,15 @@
     "title5":"living",
     "title6":"Aboutus",
     "title7":"Contactus",
-    "image1":"images/img0.png",
-    "image2":"images/img_9.png",
-    "image3":"images/img_14.png",
-    "image4":"images/img_15.png",
     "loginhead":"LOGIN",
      "signinfo":"sign in to your account",
     "username":"Username",
      "password":"Password",
     "loginbutton":"Login",
-    "forgotpass":"I forgot my password.Click here to reset"
-
+    "forgotpass":"I forgot my password.Click here to reset",
+    "registerbutton":"Register",
+    "image1":"images/img0.png",
+    "image2":"images/img_9.png",
+    "image3":"images/img_14.png",
+    "image4":"images/img_15.png"
 }

@@ -1,6 +1,6 @@
 .i1{
     position:absolute;
-    width: 1515px;
+    width: 1519px;
     height: 836px;
     left: 0px;
     top: 0px;
@@ -8,7 +8,7 @@
 }
 .i2{
     position: absolute;
-    width: 1515px;
+    width: 1519px;
     height: 328px;
     left: 0px;
     top: 798px;
@@ -19,7 +19,7 @@
     position: absolute;
     bottom: 0px;
     height: 700px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     top: 1125px;
 
@@ -31,7 +31,7 @@
 
     padding-left: 1px;
     height: 700px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     top: 1825px;
     right: 0px;
@@ -42,7 +42,7 @@
     right: 0px;
     background: #CED3E8;
     height: 640px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     top: 2428px;
 
@@ -50,7 +50,7 @@
 }
 .i6{
     height: 1000px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     top: 2990px;
     background: #E9ECF6;
@@ -63,7 +63,7 @@
     position: absolute;
     background: #E7ECFF;
     height: 569px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     top: 3950px;
     right: 0px;
@@ -73,10 +73,10 @@
     position: absolute;
     background: white;
     height: 100px;
-    width: 1515px;
+    width: 1519px;
     left: 0px;
     right: 0px;
-    top: 4600px;
+    top: 4450px;
 
 }
 .p0{
@@ -519,7 +519,7 @@ width: 150px;
 }
 .g5{
     position: absolute;
-    left: -39.24%;
+    left: 0%;
     right: 0%;
     top: -23.68%;
     bottom: 23.68%;
@@ -533,9 +533,9 @@ width: 150px;
 .s1{
     position: absolute;
     height: 24px;
-    left: 11.18%;
+    left: 13.18%;
     right: 0%;
-    top: 25px;
+    top: -10px;
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
@@ -548,7 +548,7 @@ width: 150px;
     height: 24px;
     left: 17.99%;
     right: 0%;
-    top:25px;
+    top:-10px;
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
@@ -561,7 +561,7 @@ width: 150px;
     height: 24px;
     left: 24.79%;
     right: 0%;
-    top: 25%;
+    top: -50px;
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: normal;
@@ -637,4 +637,49 @@ html {
         display: block;
     }
 }
+.fa {
+    /* position: absolute; */
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    top:100px;
 
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+position: absolute;
+    top:300px;
+    left:600px;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    position: absolute;
+    top:300px;
+    left:700px;
+}  
+    .fa-instagram {
+        background: #125688;
+        color: white;
+        position: absolute;
+    top:300px;
+    left:800px;
+      }
+      
+      .fa-pinterest {
+        background: #cb2027;
+        color: white;
+        position: absolute;
+    top:300px;
+    left:900px;
+      }    
