@@ -80,7 +80,7 @@
     </div>
     <img id="im2" class="i1">
     <div class="v39">
-        <div class="v40"></div>
+        {{!-- <div class="v40"></div> --}}
         <div class="v41"></div>
         <div class="v42"></div>
         <img id="im3" class="img">
@@ -92,14 +92,14 @@
         <div class="v47">
             <img id="im5"class="img2">
         </div>
-        <div class="v48"></div>
+        {{!-- <div class="v48"></div> --}}
         <div class="v49"></div>
         <div class="v50"></div>
         <div class="v51"></div>
         <form name="form" method="POST" >
-        <input id="username"class="v52" placeholder="Username" name="username">
-        <input class="v53" type="password" placeholder="Password" name="password" >
-        <input type="submit" id="login"class="v54">Login</input>
+        <input id="username"class="v52" placeholder="Username" name="username" required>
+        <input class="v53" type="password" placeholder="Password" name="password" required>
+        <input type="submit" id="login"class="v54"></input>
         </form>
         <a href="/signup"><span class="v59"id="l11"></span></a>
         <a href="#"><span class="v60"id="l10"></span></a>
@@ -135,6 +135,7 @@
         document.getElementById('im3').src=obj['image1'];
         document.getElementById('im4').src=obj['image3'];
         document.getElementById('im5').src=obj['image4'];
+        document.getElementById('login').innerHTML=obj['loginbutton'];
     }
     let login=document.getElementById('login');
     let text1=document.getElementById('username');

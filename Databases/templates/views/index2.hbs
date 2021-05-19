@@ -5,6 +5,9 @@
     <title>Bedroom</title>
     <link rel="stylesheet" type="text/css" href="/css/swag2.css">
     <style>
+        .input {
+    display: none;
+        }
        .p00{
     display:{{post.but1}};
     }
@@ -13,6 +16,7 @@
     }
     .name{
     display: {{post.but3}};
+    }
     </style>
 </head>
 <body>
@@ -31,7 +35,7 @@
         <p id="name_login" class="name">{{post.but4}}</p>
     </div>
     <img class="img1"  id="i1">
-    <video class="video"id="30" controls autoplay muted>   </video>
+    <video class="video"id="30" controls autoplay muted></video>
     <p class="p10"id="A"></p>
     <p class="p11"id="B"></p>
     <p class="p14"id="C"></p>
@@ -43,6 +47,9 @@
     <p id ="F"class="p13"></p>
     <img id ="i4"class="img12">
     <p id ="G" class="p23"></p>
+    <form>
+        <input type="text" id="no" value="1" class="input">
+    </form>
 </div>
 </body>
 <script >
@@ -56,6 +63,7 @@ let json="/css/Bedroom.json";
         gettext(jdata);}
     function gettext(obj){
     document.getElementById('i0').src=obj['image0'];
+    document.getElementById('i1').src=obj['Product1_image1'];
     document.getElementById('j5').innerHTML=obj['title1'];
     document.getElementById('j6').innerHTML=obj['title2'];
     document.getElementById('j7').innerHTML=obj['title3'];
@@ -70,19 +78,70 @@ let json="/css/Bedroom.json";
     document.getElementById('E').innerHTML=obj['product_description1'];
     document.getElementById('F').innerHTML=obj['product2_name'];
     document.getElementById('G').innerHTML=obj['product3_name'];
-
-
-    document.getElementById('i1').src=obj['Product1_image1'];
-    document.getElementById('30').src=obj['Product1_image1'];
+   document.getElementById('30').src=obj['Product1_video'];
     document.getElementById('i3').src=obj['Product2_image1'];
-    
+       {{!--  document.getElementById('i3').src=obj['Product2_image2'];--}}
     document.getElementById('i4').src=obj['Product3_image1'];
-    document.getElementById('i4').src=obj['Product3_image2'];
+   {{!--  document.getElementById('i4').src=obj['Product3_image2'];--}}
 
+    let image1=document.getElementById('i1');
+    let image2=document.getElementById('i3');
+    let text1=document.getElementById('F');
+    let image3=document.getElementById('i4');
+    let text2=document.getElementById('G');
+    let img1=obj["Product1_image2"];
+    let img2=obj["Product1_video"];
+    let img3=obj["Product2_image2"];
+    let img4=obj["Product2_image1"];
+    let img5=obj["Product3_image2"];
+    let img6=obj["Product3_image1"];
+    image2.addEventListener('mouseenter',change2);
+    image2.addEventListener('mouseleave',change3);
+    function change2(){
+        image2.src=img3;}
+    function change3(){
+        image2.src=img4;}
+    image2.addEventListener('click',imagechange);
+
+    function imagechange(){
+        img1=obj["Product2_image2"];
+        img2=obj["Product2_image1"];
+        img3=obj["Product1_image1"];
+        img4=obj["Product1_image1"];
+        document.getElementById('A').innerHTML=obj['product2_name'];
+        document.getElementById('F').innerHTML=obj['product1_name'];
+        document.getElementById('B').innerHTML=obj['price2'];
+        document.getElementById('C').innerHTML=obj['MRP2'];
+        document.getElementById('D').innerHTML=obj['You Save2'];
+        document.getElementById('E').innerHTML=obj['product_description2'];
+    }
+    image3.addEventListener('click',imagechange1);
+
+    function imagechange1(){
+        img1=obj["Product3_image2"];
+        img2=obj["Product3_image1"];
+        img3=obj["Product2_image2"];
+        img4=obj["Product2_image1"];
+        img5=obj["Product1_video"];
+        img6=obj["Product1_image1"];
+        document.getElementById('A').innerHTML=obj['product3_name'];
+        document.getElementById('G').innerHTML=obj['product1_name'];
+        document.getElementById('F').innerHTML=obj['product2_name'];
+        document.getElementById('B').innerHTML=obj['price3'];
+        document.getElementById('C').innerHTML=obj['MRP3'];
+        document.getElementById('D').innerHTML=obj['You Save3'];
+        document.getElementById('E').innerHTML=obj['product_description3'];
     }
 
-    let img=document.getElementById("img1");
+    image3.addEventListener('mouseenter',change4);
+    image3.addEventListener('mouseleave',change5);
+    function change4(){
+        image3.src=img5;}
+    function change5(){
+        image3.src=img6;}
+
 let video=document.getElementById('30');
+let img=document.getElementById('i1');
 img.addEventListener("mouseenter",show)
 video.addEventListener("mouseleave",leave)
 function leave(){
@@ -93,22 +152,6 @@ function show(){
     img.style.display="none";
     video.style.display="inline";
 }
-        let image2=document.getElementById('next_din')
-        let text1=document.getElementById('next_din1')
-        let image3=document.getElementById('next_din2')
-        let text2=document.getElementById('next_din3')
-        image2.addEventListener('mouseenter',change2)
-        image2.addEventListener('mouseleave',change3)
-        function change2(){
-        image2.src='img_37.jpeg';}
-        function change3(){
-        image2.src='img_36.jpeg';}
-        image3.addEventListener('mouseenter',change4)
-        image3.addEventListener('mouseleave',change5)
-        function change4(){
-        image3.src='img_42.jpeg';}
-        function change5(){
-        image3.src='img_10.png';}
-
+}
 </script>
 </html>

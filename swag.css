@@ -94,7 +94,7 @@
     height: 64px;
     left: 222px;
     top: 207px;
-    styleName: Bold 50;
+    /* styleName: Bold 50; */
     font-family: Rhodium Libre, serif;
     font-size: 50px;
     font-style: normal;
@@ -590,6 +590,7 @@ html {
 }
 
 .card {
+    position: absolute;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
 }
@@ -602,7 +603,7 @@ html {
 }
 
 .container {
-    padding: 0 16px;
+    padding: 0 5px;
 }
 
 .container::after, .row::after {
@@ -626,6 +627,7 @@ html {
     cursor: pointer;
     width: 100%;
 }
+
 
 .button:hover {
     background-color: #555;

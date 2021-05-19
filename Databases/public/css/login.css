@@ -211,7 +211,7 @@ position: absolute;
     position: absolute;
     top: 25px;
     left: 74px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.11999999731779099);
+     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.11999999731779099);
     overflow: hidden;
 }
 .v42 {
@@ -328,7 +328,7 @@ position: absolute;
 .v53 {
     width: 200px;
     height: 30px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(102,126,234,0.5);
     position: absolute;
     top: 310px;
     left: 140px;
@@ -341,23 +341,25 @@ position: absolute;
     background: rgba(237,242,247,1);
 }
 .v54 {
-    width: 46px;
+    width: 200px;
+    height: 50px;
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 393px;
-    left: 272px;
+    top: 380px;
+    left: 200px;
     font-family: Roboto, serif;
     font-weight: lighter;
     font-size: 18px;
     opacity: 1;
-    text-align: left;
+    text-align: center;
+    background:#667EEA;
 }
 .v59 {
     width: 184px;
     color: rgba(74,85,104,1);
     position: absolute;
     top: 508px;
-    left: 202px;
+    left: 250px;
     font-family: Roboto, serif;
     font-weight: lighter;
     font-size: 18px;

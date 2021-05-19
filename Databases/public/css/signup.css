@@ -774,8 +774,8 @@ align-items: flex-start;
 padding: 0px;
 
 position: absolute;
-width: 216px;
-height: 80px;
+width: 175px;
+height: 60px;
 left: 272px;
 top: 700px;
 flex: none;
@@ -787,13 +787,14 @@ margin: 40px 0px;
     position: absolute;
 width: 152px;
 height: 48px;
-left: 25px;
-top: 15px;
+left: 289px;
+top: 745px;
 
 font-family: Inter;
 font-style: normal;
 font-weight: 500;
-font-size: 40px;
+font-size: 30px;
+text-align: center;
 line-height: 120%;
 /* identical to box height, or 48px */
 
@@ -802,7 +803,7 @@ align-items: center;
 
 /* white */
 
-color: #FFFFFF;
+/* color: #FFFFFF; */
 
 
 /* Inside Auto Layout */

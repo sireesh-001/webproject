@@ -161,7 +161,10 @@ display: {{post.but3}};
     display :{{post.but2}};
     }
     .name{
-    display: {{post.but3}};
+    display: {{post.but3}};}
+    .q11{
+        display: none;
+    }
     </style>
 </head>
 <body>
@@ -178,6 +181,7 @@ display: {{post.but3}};
         <a href="#about"> <p class="p8"id="j10"></p></a>
         <a href="#contact"><p class="p9"id="j11"></p></a>
         <a href="/login" ><button id="login_button" class="p10">Login/Register</button></a>
+        <a href="/signout" ><button id="signout_button" class="q11">Sign Out</button></a>
         <img id="user_image"class="user" src="images/img_20.jpeg">
         <p id="name_login" class="name">{{post.but4}}</p>
     </div>
@@ -229,8 +233,9 @@ display: {{post.but3}};
     <div class="row">
         <div class="column">
             <div class="card">
-                <img id="im6" alt="abhinav" style="width:60%" height="300px">
-                <div class="container">
+                
+                <div class="container" style="text-align:center">
+                    <img class="d1" id="im6" alt="abhinav" style="width:60%" height="300px">
                     <h2 id="j23"></h2>
                     <p class="title" id="j24"></p>
                     <p id="j25"></p>
@@ -241,8 +246,8 @@ display: {{post.but3}};
 
         <div class="column">
             <div class="card">
-                <img  id="im7"alt="Sireesh" style="width:60%" height="300px">
-                <div class="container">
+                <div class="container" style="text-align:center">
+                    <img class="d2" id="im7"alt="Sireesh" style="width:60%" height="300px">
                     <h2 id="j27"></h2>
                     <p class="title" id="j28"></p>
                     <p id="j29"></p>
@@ -253,8 +258,8 @@ display: {{post.but3}};
 
         <div class="column">
             <div class="card" >
-                <img id="im8" alt="Pranav" style="width:60%" height="300px">
-                <div class="container">
+                <div class="container" style="text-align:center">
+                    <img class="d3" id="im8" alt="Pranav" style="width:60%" height="300px">
                     <h2 id="j31"></h2>
                     <p class="title" id="j32"></p>
                     <p id="j33"></p>
@@ -336,17 +341,19 @@ display: {{post.but3}};
         document.getElementById('im7').src=obj['image7'];
         document.getElementById('im8').src=obj['image8'];
     }
-    document.getElementById('home_id').addEventListener('mouseenter',check)
-    function check(){
-        if(done>0){
-            document.getElementById('login_button').style.display="none";
-            document.getElementById('user_image').style.display="inline";
-            document.getElementById('name_login').style.display="inline";
-        }
-        else if (done==0){
-            document.getElementById('login_button').style.display="none";
-            document.getElementById('user_image').style.display="inline";
-            document.getElementById('name_login').style.display="inline";
-        }}
+    let h=document.getElementById('name_login');
+    let g=document.getElementById('signout_button');
+    h.addEventListener("mouseenter",sign1);
+    function sign1(){
+        h.style.display="none";
+        document.getElementById('user_image').style.display="none";
+        g.style.display="inline";
+    }
+h.addEventListener("mouseleave",sign2);
+function sign2(){
+    h.style.display="inline";
+    document.getElementById('user_image').style.display="inline";
+    g.style.display="none";
+}
 </script>
 </html>
