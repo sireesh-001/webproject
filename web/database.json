@@ -1,0 +1,57 @@
+{
+"item1":{
+
+    "no":1,
+    "field":"dining",
+    "name":"Oribi upholstered dining bench",
+    "price":"22999"
+},
+"item2":{
+    "no":2,
+    "field":"dining",
+    "name":"Taarkashi Dining Bench",
+    "price":"1,59,000"
+},
+"item3":{
+    "no":3,
+    "field":"dining",
+    "name":"Morbylaga Dining Bench",
+    "price":"22999"
+},
+"item4":{
+    "no":4,
+    "field":"living",
+    "name":"GRONLID Corner Sofa",
+    "price":"1,33,000"
+},
+"item5":{
+    "no":5,
+    "field":"living",
+    "name":"Soderhaman Modular sofa",
+    "price":"43,000"
+},
+"item6":{
+    "no":6,
+    "field":"living",
+    "name":"Lenda tie back curtains",
+    "price":"3000"
+},
+"item7":{
+    "no":7,
+    "field":"Bedroom",
+    "name":"FRIHETEN SOFA BED",
+    "price":"33,000"
+},
+"item8":{
+    "no":8,
+    "field":"Bedroom",
+    "name":"PAX Wardrobe",
+    "price":"33,000"
+},
+"item9":{
+    "no":9,
+    "field":"Bedroom",
+    "name":"MALM BED FRAME",
+    "price":"13,000"
+}
+}

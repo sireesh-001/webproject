@@ -340,6 +340,19 @@ position: absolute;
     border: none;
     background: rgba(237,242,247,1);
 }
+.v100{
+    width: 400px;
+    height: 30px;
+    color:red;
+    position: absolute;
+    top: 355px;
+    left: 140px;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+}
 .v54 {
     width: 200px;
     height: 50px;
@@ -354,6 +367,7 @@ position: absolute;
     text-align: center;
     background:#667EEA;
 }
+
 .v59 {
     width: 184px;
     color: rgba(74,85,104,1);

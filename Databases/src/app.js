@@ -18,8 +18,6 @@ let alert = require('js-alert');
 // let alert1 = require('alert');
 
 
-
-
 app.get("/",(req, res) => {
 MongoClient.connect(url1, function(err, db) {
     if (err) throw err;
@@ -153,7 +151,9 @@ app.post("/login",async(req, res) => {
                   console.log("1 document updated");
                 });
                 res.redirect("/");
-              }}
+              }
+  
+            }
               db.close();
             });
           });
@@ -293,7 +293,8 @@ app.post("/checkout",async(req, res) => {
       cvv:req.body.cvv,
       namecard:req.body.namecard,
       country:req.body.country,
-      Zip:req.body.zip
+      Zip:req.body.zip,
+      address:req.body.address
           })
           const signupstatus=await userrecord.save();
           alert.alert("Order sucessful and will be deliverd to you shortly");

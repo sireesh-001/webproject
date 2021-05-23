@@ -7,7 +7,8 @@ month:{type:String,required:true},
 cvv:{type:String,required:true},
 namecard:{type:String,required:true},
 country:{type:String,required:true},
-Zip:{type:String,required:true}
+Zip:{type:String,required:true},
+address:{type:String,required:true}
     }
 )
 

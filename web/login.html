@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div>
+    <a name="home"></a>
+    <div class="bar">
+        <img id="im1" class="p0">
+        <p class="p3"id="l1"></p>
+        <a href="index.html#home"><p class="p4"id="l2"></p></a>
+        <a href="index.html#bedroom"><p class="p5"id="l3"></p></a>
+        <a href="index.html#dining"> <p class="p6"id="l4"></p></a>
+        <a href="index.html#living"> <p class="p7"id="l5"></p></a>
+        <a href="index.html#about"> <p class="p8"id="l6"></p></a>
+        <a href="index.html#contact"><p class="p9"id="l7"></p></a>
+    </div>
+    <img id="im2" class="i1">
+    <div class="v39">
+        <div class="v40"></div>
+        <div class="v41"></div>
+        <div class="v42"></div>
+        <img id="im3" class="img">
+        <span class="v44"id="l8"></span>
+        <span class="v45"id="l9"></span>
+        <div class="v46">
+            <img id="im4"class="img1">
+        </div>
+        <div class="v47">
+            <img id="im5"class="img2">
+        </div>
+        <div class="v48"></div>
+        <div class="v49"></div>
+        <div class="v50"></div>
+        <div class="v51"></div>
+        <input id="username"class="v52" placeholder="Username">
+        <input class="v53" placeholder="Password">
+        <a href="index.html#home"> <span id="login"class="v54">Login</span></a>
+        <a href="signup.html"><span class="v59"id="l11"></span></a>
+        <a href="#"><span class="v60"id="l10"></span></a>
+
+</div>
+</div>
+</body>
+<script>
+       let json="login.json";
+    let httprequest = new XMLHttpRequest();
+    httprequest.open('GET',json);
+    httprequest.responseType='json';
+    httprequest.send();
+    httprequest.onload=function(){
+        const jdata=httprequest.response;
+        gettext(jdata);
+
+    }
+    function gettext(obj){
+        document.getElementById('l1').innerHTML=obj['title1'];
+        document.getElementById('l2').innerHTML=obj['title2'];
+        document.getElementById('l3').innerHTML=obj['title3'];
+        document.getElementById('l4').innerHTML=obj['title4'];
+        document.getElementById('l5').innerHTML=obj['title5'];
+        document.getElementById('l6').innerHTML=obj['title6'];
+        document.getElementById('l7').innerHTML=obj['title7'];
+        document.getElementById('l8').innerHTML=obj['loginhead'];
+        document.getElementById('l9').innerHTML=obj['signinfo'];
+        document.getElementById('l10').innerHTML=obj['forgotpass'];
+        document.getElementById('l11').innerHTML=obj['registerbutton'];
+        document.getElementById('im1').src=obj['image1'];
+        document.getElementById('im2').src=obj['image2'];
+        document.getElementById('im3').src=obj['image1'];
+        document.getElementById('im4').src=obj['image3'];
+        document.getElementById('im5').src=obj['image4'];
+    }
+    let login=document.getElementById('login');
+    let text1=document.getElementById('username');
+    login.addEventListener("click",get_name)
+    function get_name(){
+        username=text1.value;
+        done=done+1;
+    }
+</script>
+</html>

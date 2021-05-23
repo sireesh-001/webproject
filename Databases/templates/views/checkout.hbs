@@ -40,47 +40,48 @@
         <form method="POST" action="" name="myForm" onsubmit="return validateForm()">
         <div class="div5">
             <p class="dip4"id="E"></p>
-            <input class="int1" name="email" type="email" required>
+            <input class="int1" name="email" type="email" required autofocus>
+            <input class="int87" placeholder="Address" name="address" type="text" required >
         </div>
         <div class="div6">
             <p class="int2"id="F"></p>
-            <input class="int3" placeholder="1234 1234 1234 1234" name="card" type="number" required>
+            <input class="int3" placeholder="1234 1234 1234 1234" pattern="[0-9]{16}" name="card" type="number" required>
             <img class="img4" alt="Credit Card Logos" title="Credit Card Logos" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_23.gif" width="300" height="50" border="0" />
-            <input class="int4" placeholder="MM / YY" name="month" type="number" required>
-            <input class="int5" placeholder="CVV" name="cvv" type="number" required>
+            <input class="int4" placeholder="MM / YY" name="month"  type="text" required>
+            <input class="int5" placeholder="CVV" pattern="[0-9]{3}" name="cvv" type="number" required>
         </div>
         <p class="p11"id="G"></p>
-        <input class="dip5" name="namecard" required>
+        <input class="dip5" name="namecard"  required>
     </div>
     <div class="div7">
         <p class="p12"id="H"></p>
             <select id="select"class="count" name="country" id="count" required>
-                <option value="volvo">Afghanistan</option>
-                <option value="saab">Australia</option>
-                <option value="opel">Bangladesh</option>
-                <option value="audi">Belgium</option>
-                <option value="audi">Canada</option>
-                <option value="audi">China</option>
-                <option value="audi">Egypt</option>
-                <option value="audi">Germany</option>
-                <option value="audi">Hongkong</option>
-                <option value="audi">India</option>
-                <option value="audi">Indonesia</option>
-                <option value="audi">Japan</option>
-                <option value="audi">Kenya</option>
-                <option value="audi">Libya</option>
-                <option value="audi">Malayasia</option>
-                <option value="audi">Nepal</option>
-                <option value="audi">Oman</option>
-                <option value="audi">Pakistan</option>
-                <option value="audi">Qatar</option>
-                <option value="audi">Russia</option>
-                <option value="audi">Saudi Arabia</option>
-                <option value="audi">Thailand</option>
-                <option value="audi">United Kingdom</option>
-                <option value="audi">Venezeula</option>
-                <option value="audi">Yemen</option>
-                <option value="audi">Zambia</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Germany">Germany</option>
+                <option value="Hongkong">Hongkong</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Japan">Japan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Libya">Libya</option>
+                <option value="Malayasia">Malayasia</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Russia">Russia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Venezeula">Venezeula</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
             </select>
             <br><br>
             <input class="int6" type="number" placeholder="ZIP" name="zip" required>
